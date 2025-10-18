@@ -125,7 +125,22 @@ class ReginaParkingDataDownloader:
             logger.info("Splitting VIOL_LOC into LOCATION and ADDRESS...")
             df = self.split_location(df)
 
+        # Clean up known typos and data issues
+        df = self.clean_data(df)
+
         logger.info("Processing complete")
+        return df
+
+    def clean_data(self, df: pd.DataFrame) -> pd.DataFrame:
+        """Clean up known typos and data quality issues."""
+        logger.info("Cleaning data...")
+
+        if "ADDRESS" in df.columns:
+            # Fix typo: "Augus St" should be "Angus St"
+            df["ADDRESS"] = df["ADDRESS"].str.replace(
+                "Augus St,", "Angus St,", regex=False
+            )
+
         return df
 
     def split_location(self, df: pd.DataFrame) -> pd.DataFrame:
