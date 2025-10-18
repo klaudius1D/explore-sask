@@ -120,6 +120,11 @@ class ReginaParkingDataDownloader:
                 df["VIOLATION_DATETIME"], format="%d/%m/%Y %H:%M:%S", errors="coerce"
             )
 
+            # Split datetime into separate date and time columns
+            logger.info("Splitting datetime into VIOLATION_DATE and VIOLATION_TIME...")
+            df["VIOLATION_DATE"] = df["VIOLATION_DATETIME"].dt.date
+            df["VIOLATION_TIME"] = df["VIOLATION_DATETIME"].dt.time
+
         # Split VIOL_LOC into LOCATION and ADDRESS
         if "VIOL_LOC" in df.columns:
             logger.info("Splitting VIOL_LOC into LOCATION and ADDRESS...")
@@ -134,7 +139,7 @@ class ReginaParkingDataDownloader:
     def clean_data(self, df: pd.DataFrame) -> pd.DataFrame:
         """Clean up known typos and data quality issues."""
         logger.info("Cleaning data...")
-        
+
         if "ADDRESS" in df.columns:
             # Fix typo: "Augus St" should be "Angus St"
             df["ADDRESS"] = df["ADDRESS"].str.replace(
@@ -144,7 +149,7 @@ class ReginaParkingDataDownloader:
             df["ADDRESS"] = df["ADDRESS"].str.replace(
                 "August St,", "Angus St,", regex=False
             )
-        
+
         return df
 
     def split_location(self, df: pd.DataFrame) -> pd.DataFrame:
@@ -263,9 +268,21 @@ class ReginaParkingDataDownloader:
         print(f"Columns: {list(df.columns)}")
 
         # Display date range
-        if "VIOLATION_DATETIME" in df.columns:
+        if "VIOLATION_DATE" in df.columns:
             print(
-                f"Date range: {df['VIOLATION_DATETIME'].min()} to {df['VIOLATION_DATETIME'].max()}"
+                f"Date range: {df['VIOLATION_DATE'].min()} to {df['VIOLATION_DATE'].max()}"
+            )
+
+        # Display time statistics
+        if "VIOLATION_TIME" in df.columns:
+            # Create hour column for analysis
+            df_temp = df.copy()
+            df_temp["hour"] = pd.to_datetime(
+                df_temp["VIOLATION_TIME"].astype(str)
+            ).dt.hour
+            top_hours = df_temp["hour"].value_counts().head(3)
+            print(
+                f"Most common violation hours: {dict(zip(top_hours.index, top_hours.values))}"
             )
 
         # Display location statistics
