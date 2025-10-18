@@ -1,0 +1,128 @@
+table combined_parking_tickets
+	lineageTag: cec53df2-aa7a-426d-b66b-b4852d7f9d54
+
+	column VIOLATION_DATETIME
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: be09a803-e518-42df-bf43-408fb67f6ef3
+		summarizeBy: none
+		sourceColumn: VIOLATION_DATETIME
+
+		variation Variation
+			isDefault
+			relationship: 9898750f-91d0-4408-bbbf-b32d7c6b021c
+			defaultHierarchy: LocalDateTable_0fe756b6-343a-4a58-89e6-244107c16dca.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column VIOL_LOC
+		dataType: string
+		lineageTag: 5b0e069b-3472-48bd-9807-d6aca10db7c9
+		summarizeBy: none
+		sourceColumn: VIOL_LOC
+
+		annotation SummarizationSetBy = Automatic
+
+	column INF_CD
+		dataType: string
+		lineageTag: 0f821658-452f-4d9c-95c0-7d8be3a3f645
+		summarizeBy: none
+		sourceColumn: INF_CD
+
+		annotation SummarizationSetBy = Automatic
+
+	column INF_DESCR
+		dataType: string
+		lineageTag: 34a8358a-924c-458d-9076-b2ed7c946ffa
+		summarizeBy: none
+		sourceColumn: INF_DESCR
+
+		annotation SummarizationSetBy = Automatic
+
+	column VIOLATION_DATE
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 892763d9-834c-4f21-b214-f85ed072121a
+		summarizeBy: none
+		sourceColumn: VIOLATION_DATE
+
+		variation Variation
+			isDefault
+			relationship: b41acd59-6950-4919-b9a5-04b89ad61045
+			defaultHierarchy: LocalDateTable_92d6dd8e-7bbb-4db2-916f-3e72a92668fc.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column VIOLATION_TIME
+		dataType: dateTime
+		formatString: Long Time
+		lineageTag: 7e4f1986-dc49-459e-ac3c-3f4ccca287ef
+		summarizeBy: none
+		sourceColumn: VIOLATION_TIME
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Time
+
+	column TIME_CATEGORY
+		dataType: string
+		lineageTag: 845f5ad6-7775-43fc-98f1-aa572f4a6f2d
+		summarizeBy: none
+		sourceColumn: TIME_CATEGORY
+
+		annotation SummarizationSetBy = Automatic
+
+	column DAY_OF_WEEK
+		dataType: string
+		lineageTag: 438b161f-b2dc-495b-81db-d54c1762203d
+		summarizeBy: none
+		sourceColumn: DAY_OF_WEEK
+
+		annotation SummarizationSetBy = Automatic
+
+	column WEEKEND_OR_WEEKDAY
+		dataType: string
+		lineageTag: 27c69c29-af8d-42a2-998b-8e7b41e799da
+		summarizeBy: none
+		sourceColumn: WEEKEND_OR_WEEKDAY
+
+		annotation SummarizationSetBy = Automatic
+
+	column IS_PUBLIC_HOLIDAY
+		dataType: string
+		lineageTag: 85b1a15f-8fe4-44d1-9aee-37ea3d605539
+		summarizeBy: none
+		sourceColumn: IS_PUBLIC_HOLIDAY
+
+		annotation SummarizationSetBy = Automatic
+
+	column LOCATION
+		dataType: string
+		lineageTag: fb175dab-e1b1-4974-be64-f6279f954650
+		summarizeBy: none
+		sourceColumn: LOCATION
+
+		annotation SummarizationSetBy = Automatic
+
+	column ADDRESS
+		dataType: string
+		lineageTag: df796404-1e20-48ca-ae67-d9c6c30109d2
+		summarizeBy: none
+		sourceColumn: ADDRESS
+
+		annotation SummarizationSetBy = Automatic
+
+	partition combined_parking_tickets = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("\\Mac\iCloud\explore-sask\explore-sask\data\combined_parking_tickets.csv"),[Delimiter=",", Columns=12, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"VIOLATION_DATETIME", type datetime}, {"VIOL_LOC", type text}, {"INF_CD", type text}, {"INF_DESCR", type text}, {"VIOLATION_DATE", type date}, {"VIOLATION_TIME", type time}, {"TIME_CATEGORY", type text}, {"DAY_OF_WEEK", type text}, {"WEEKEND_OR_WEEKDAY", type text}, {"IS_PUBLIC_HOLIDAY", type text}, {"LOCATION", type text}, {"ADDRESS", type text}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+

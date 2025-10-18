@@ -1,0 +1,2845 @@
+cultureInfo en-US
+
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "combined_parking_ticket": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "combined_parking_tickets"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "combined parking ticket": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "combined_parking_tickets": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "ticket": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "parking ticket": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "combined parking coupon": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "parking coupon": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "combined parking permit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "combined parking voucher": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "combined parking receipt": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "coupon": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "parking permit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "parking voucher": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "parking receipt": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "combined parking marker": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        }
+			      ]
+			    },
+			    "combined_parking_ticket.violation_datetime": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "combined_parking_tickets",
+			          "ConceptualProperty": "VIOLATION_DATETIME"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "violation datetime": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "VIOLATION_DATETIME": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "combined_parking_ticket.viol_loc": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "combined_parking_tickets",
+			          "ConceptualProperty": "VIOL_LOC"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "viol loc": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "VIOL_LOC": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "combined_parking_ticket.inf_cd": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "combined_parking_tickets",
+			          "ConceptualProperty": "INF_CD"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "inf cd": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "INF_CD": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "cd": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "inf album": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "album": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "inf disk": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "inf disc": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "inf recording": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "disk": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "disc": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "recording": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "Code": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "combined_parking_ticket.inf_descr": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "combined_parking_tickets",
+			          "ConceptualProperty": "INF_DESCR"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "inf descr": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "INF_DESCR": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Infraction Description": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "combined_parking_ticket.violation_date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "combined_parking_tickets",
+			          "ConceptualProperty": "VIOLATION_DATE"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "violation date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "VIOLATION_DATE": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "violation moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "violation period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "combined_parking_ticket.violation_time": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "combined_parking_tickets",
+			          "ConceptualProperty": "VIOLATION_TIME"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "violation time": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "VIOLATION_TIME": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "violation duration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "violation interval": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "violation moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "violation period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "violation timetable": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "combined_parking_ticket.time_category": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "combined_parking_tickets",
+			          "ConceptualProperty": "TIME_CATEGORY"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "time category": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "TIME_CATEGORY": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "category": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "time classification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "classification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "time class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "time group": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "time type": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "time grouping": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "time kind": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "type": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "grouping": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "Time": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "combined_parking_ticket.day_of_week": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "combined_parking_tickets",
+			          "ConceptualProperty": "DAY_OF_WEEK"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "day of week": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "DAY_OF_WEEK": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "combined_parking_ticket.weekend_or_weekday": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "combined_parking_tickets",
+			          "ConceptualProperty": "WEEKEND_OR_WEEKDAY"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "weekend or weekday": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "WEEKEND_OR_WEEKDAY": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "weekend": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "weekend weekday": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "weekday": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "ordinary": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "standard": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "basic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "routine": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "combined_parking_ticket.is_public_holiday": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "combined_parking_tickets",
+			          "ConceptualProperty": "IS_PUBLIC_HOLIDAY"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "is public holiday": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "IS_PUBLIC_HOLIDAY": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "holiday": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "public holiday": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "is public break": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "is public leave": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "is public trip": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "is public outing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "public break": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "public leave": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "public trip": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "public outing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "break": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "leave": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "combined_parking_ticket.location": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "combined_parking_tickets",
+			          "ConceptualProperty": "LOCATION"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "location": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "locality": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "placement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "scene": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "venue": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "place": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "position": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "setting": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "site": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "spot": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "combined_parking_ticket.address": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "combined_parking_tickets",
+			          "ConceptualProperty": "ADDRESS"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "address": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "direction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "residence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "contact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "place": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "day_order": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DayOrder"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "day order": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "DayOrder": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "day instruction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "day direction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "day edict": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "day command": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "day directive": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "day demand": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "day mandate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "day imperative": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "day stability": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "day harmony": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        }
+			      ]
+			    },
+			    "day_order.day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DayOrder",
+			          "ConceptualProperty": "Day"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "day": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "day_order.order": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DayOrder",
+			          "ConceptualProperty": "Order"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "order": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "instruction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "direction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "edict": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "command": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "directive": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "demand": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "mandate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "imperative": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "stability": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "harmony": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        }
+			      ]
+			    },
+			    "combined_parking_ticket.violation_datetime.date_hierarchy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "combined_parking_tickets",
+			          "VariationSource": "VIOLATION_DATETIME",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "violation datetime date hierarchy": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date hierarchy": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "combined_parking_ticket.violation_datetime.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "combined_parking_tickets",
+			          "VariationSource": "VIOLATION_DATETIME",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "violation datetime year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "violation datetime yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "combined_parking_ticket.violation_datetime.quarter": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "combined_parking_tickets",
+			          "VariationSource": "VIOLATION_DATETIME",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Quarter"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "violation datetime quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "violation datetime qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.846
+			          }
+			        },
+			        {
+			          "qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "combined_parking_ticket.violation_datetime.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "combined_parking_tickets",
+			          "VariationSource": "VIOLATION_DATETIME",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "violation datetime month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "violation datetime mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "combined_parking_ticket.violation_datetime.day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "combined_parking_tickets",
+			          "VariationSource": "VIOLATION_DATETIME",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Day"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "violation datetime day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "day": {
+			            "State": "Generated"
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "combined_parking_ticket.violation_date.date_hierarchy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "combined_parking_tickets",
+			          "VariationSource": "VIOLATION_DATE",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "violation date hierarchy": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date hierarchy": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "combined_parking_ticket.violation_date.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "combined_parking_tickets",
+			          "VariationSource": "VIOLATION_DATE",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "violation year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "violation date year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date year": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "violation date yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "violation yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "date yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "violation moment year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "moment year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "violation period year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "period year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "combined_parking_ticket.violation_date.quarter": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "combined_parking_tickets",
+			          "VariationSource": "VIOLATION_DATE",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Quarter"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "violation quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "violation date quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date quarter": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "violation date qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.846
+			          }
+			        },
+			        {
+			          "violation qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.833
+			          }
+			        },
+			        {
+			          "date qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.833
+			          }
+			        },
+			        {
+			          "qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        },
+			        {
+			          "violation moment quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "moment quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "violation period quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "period quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "combined_parking_ticket.violation_date.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "combined_parking_tickets",
+			          "VariationSource": "VIOLATION_DATE",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "violation month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "violation date month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date month": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "violation date mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "violation mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "date mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "violation moment month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "moment month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "violation period month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "period month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "combined_parking_ticket.violation_date.day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "combined_parking_tickets",
+			          "VariationSource": "VIOLATION_DATE",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Day"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "violation day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "violation date day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date day": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "violation moment day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "moment day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "violation period day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "period day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    }
+			  },
+			  "Relationships": {
+			    "combined_parking_ticket_violation_date_date_hierarchy_has_combined_parking_ticket_violation_date_month": {
+			      "Binding": {
+			        "ConceptualEntity": "combined_parking_tickets"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "combined_parking_ticket.violation_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "combined_parking_ticket.violation_date.date_hierarchy"
+			          }
+			        },
+			        "combined_parking_ticket.violation_date.month": {
+			          "Target": {
+			            "Entity": "combined_parking_ticket.violation_date.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "combined_parking_ticket.violation_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "combined_parking_ticket.violation_date.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "violation_date_hierarchies_have_violation_months"
+			        }
+			      ]
+			    },
+			    "combined_parking_ticket_violation_date_date_hierarchy_has_combined_parking_ticket_violation_date_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "combined_parking_tickets"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "combined_parking_ticket.violation_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "combined_parking_ticket.violation_date.date_hierarchy"
+			          }
+			        },
+			        "combined_parking_ticket.violation_date.quarter": {
+			          "Target": {
+			            "Entity": "combined_parking_ticket.violation_date.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "combined_parking_ticket.violation_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "combined_parking_ticket.violation_date.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "violation_date_hierarchies_have_violation_quarters"
+			        }
+			      ]
+			    },
+			    "combined_parking_ticket_violation_date_date_hierarchy_has_combined_parking_ticket_violation_date_year": {
+			      "Binding": {
+			        "ConceptualEntity": "combined_parking_tickets"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "combined_parking_ticket.violation_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "combined_parking_ticket.violation_date.date_hierarchy"
+			          }
+			        },
+			        "combined_parking_ticket.violation_date.year": {
+			          "Target": {
+			            "Entity": "combined_parking_ticket.violation_date.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "combined_parking_ticket.violation_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "combined_parking_ticket.violation_date.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "violation_date_hierarchies_have_violation_years"
+			        }
+			      ]
+			    },
+			    "combined_parking_ticket_violation_date_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "combined_parking_tickets"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "combined_parking_ticket.violation_date": {
+			          "Target": {
+			            "Entity": "combined_parking_ticket.violation_date"
+			          }
+			        },
+			        "combined_parking_ticket.violation_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "combined_parking_ticket.violation_date.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "combined_parking_ticket.violation_date"
+			            },
+			            "Object": {
+			              "Role": "combined_parking_ticket.violation_date.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "violation_dates_have_violation_date_hierarchies"
+			        }
+			      ]
+			    },
+			    "combined_parking_ticket_violation_datetime_date_hierarchy_has_combined_parking_ticket_violation_datetime_day": {
+			      "Binding": {
+			        "ConceptualEntity": "combined_parking_tickets"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "combined_parking_ticket.violation_datetime.date_hierarchy": {
+			          "Target": {
+			            "Entity": "combined_parking_ticket.violation_datetime.date_hierarchy"
+			          }
+			        },
+			        "combined_parking_ticket.violation_datetime.day": {
+			          "Target": {
+			            "Entity": "combined_parking_ticket.violation_datetime.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "combined_parking_ticket.violation_datetime.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "combined_parking_ticket.violation_datetime.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "violation_datetime_date_hierarchies_have_violation_datetime_days"
+			        }
+			      ]
+			    },
+			    "combined_parking_ticket_violation_datetime_date_hierarchy_has_combined_parking_ticket_violation_datetime_month": {
+			      "Binding": {
+			        "ConceptualEntity": "combined_parking_tickets"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "combined_parking_ticket.violation_datetime.date_hierarchy": {
+			          "Target": {
+			            "Entity": "combined_parking_ticket.violation_datetime.date_hierarchy"
+			          }
+			        },
+			        "combined_parking_ticket.violation_datetime.month": {
+			          "Target": {
+			            "Entity": "combined_parking_ticket.violation_datetime.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "combined_parking_ticket.violation_datetime.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "combined_parking_ticket.violation_datetime.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "violation_datetime_date_hierarchies_have_violation_datetime_months"
+			        }
+			      ]
+			    },
+			    "combined_parking_ticket_violation_datetime_date_hierarchy_has_combined_parking_ticket_violation_datetime_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "combined_parking_tickets"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "combined_parking_ticket.violation_datetime.date_hierarchy": {
+			          "Target": {
+			            "Entity": "combined_parking_ticket.violation_datetime.date_hierarchy"
+			          }
+			        },
+			        "combined_parking_ticket.violation_datetime.quarter": {
+			          "Target": {
+			            "Entity": "combined_parking_ticket.violation_datetime.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "combined_parking_ticket.violation_datetime.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "combined_parking_ticket.violation_datetime.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "violation_datetime_date_hierarchies_have_violation_datetime_quarters"
+			        }
+			      ]
+			    },
+			    "combined_parking_ticket_violation_datetime_date_hierarchy_has_combined_parking_ticket_violation_datetime_year": {
+			      "Binding": {
+			        "ConceptualEntity": "combined_parking_tickets"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "combined_parking_ticket.violation_datetime.date_hierarchy": {
+			          "Target": {
+			            "Entity": "combined_parking_ticket.violation_datetime.date_hierarchy"
+			          }
+			        },
+			        "combined_parking_ticket.violation_datetime.year": {
+			          "Target": {
+			            "Entity": "combined_parking_ticket.violation_datetime.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "combined_parking_ticket.violation_datetime.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "combined_parking_ticket.violation_datetime.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "violation_datetime_date_hierarchies_have_violation_datetime_years"
+			        }
+			      ]
+			    },
+			    "combined_parking_ticket_violation_datetime_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "combined_parking_tickets"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "combined_parking_ticket.violation_datetime": {
+			          "Target": {
+			            "Entity": "combined_parking_ticket.violation_datetime"
+			          }
+			        },
+			        "combined_parking_ticket.violation_datetime.date_hierarchy": {
+			          "Target": {
+			            "Entity": "combined_parking_ticket.violation_datetime.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "combined_parking_ticket.violation_datetime"
+			            },
+			            "Object": {
+			              "Role": "combined_parking_ticket.violation_datetime.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "violation_datetimes_have_violation_datetime_date_hierarchies"
+			        }
+			      ]
+			    },
+			    "combined_parking_ticket_has_day_order": {
+			      "Binding": {
+			        "ConceptualEntity": "combined_parking_tickets"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "combined_parking_ticket": {
+			          "Target": {
+			            "Entity": "combined_parking_ticket"
+			          }
+			        },
+			        "day_order": {
+			          "Target": {
+			            "Entity": "day_order"
+			          },
+			          "Nouns": [
+			            {
+			              "day of week": {
+			                "State": "Generated"
+			              }
+			            }
+			          ]
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "combined_parking_ticket"
+			            },
+			            "Object": {
+			              "Role": "day_order"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "combined_parking_tickets_have_day_orders"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "day_order"
+			            },
+			            "Object": {
+			              "Role": "combined_parking_ticket"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "day_orders_have_combined_parking_tickets"
+			        }
+			      ]
+			    },
+			    "day_order_has_order": {
+			      "Binding": {
+			        "ConceptualEntity": "DayOrder"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "day_order": {
+			          "Target": {
+			            "Entity": "day_order"
+			          }
+			        },
+			        "day_order.order": {
+			          "Target": {
+			            "Entity": "day_order.order"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "day_order"
+			            },
+			            "Object": {
+			              "Role": "day_order.order"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "day_orders_have_orders"
+			        }
+			      ]
+			    },
+			    "day_order_has_day": {
+			      "Binding": {
+			        "ConceptualEntity": "DayOrder"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "day_order": {
+			          "Target": {
+			            "Entity": "day_order"
+			          }
+			        },
+			        "day_order.day": {
+			          "Target": {
+			            "Entity": "day_order.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "day_order"
+			            },
+			            "Object": {
+			              "Role": "day_order.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "day_orders_have_days"
+			        }
+			      ]
+			    },
+			    "combined_parking_ticket_has_address": {
+			      "Binding": {
+			        "ConceptualEntity": "combined_parking_tickets"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "combined_parking_ticket": {
+			          "Target": {
+			            "Entity": "combined_parking_ticket"
+			          }
+			        },
+			        "combined_parking_ticket.address": {
+			          "Target": {
+			            "Entity": "combined_parking_ticket.address"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "combined_parking_ticket"
+			            },
+			            "Object": {
+			              "Role": "combined_parking_ticket.address"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "combined_parking_tickets_have_addresses"
+			        }
+			      ]
+			    },
+			    "combined_parking_ticket_has_location": {
+			      "Binding": {
+			        "ConceptualEntity": "combined_parking_tickets"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "combined_parking_ticket": {
+			          "Target": {
+			            "Entity": "combined_parking_ticket"
+			          }
+			        },
+			        "combined_parking_ticket.location": {
+			          "Target": {
+			            "Entity": "combined_parking_ticket.location"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "combined_parking_ticket"
+			            },
+			            "Object": {
+			              "Role": "combined_parking_ticket.location"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "combined_parking_tickets_have_locations"
+			        }
+			      ]
+			    },
+			    "combined_parking_ticket_has_is_public_holiday": {
+			      "Binding": {
+			        "ConceptualEntity": "combined_parking_tickets"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "combined_parking_ticket": {
+			          "Target": {
+			            "Entity": "combined_parking_ticket"
+			          }
+			        },
+			        "combined_parking_ticket.is_public_holiday": {
+			          "Target": {
+			            "Entity": "combined_parking_ticket.is_public_holiday"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "combined_parking_ticket"
+			            },
+			            "Object": {
+			              "Role": "combined_parking_ticket.is_public_holiday"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "combined_parking_tickets_have_is_public_holidays"
+			        }
+			      ]
+			    },
+			    "combined_parking_ticket_has_weekend_or_weekday": {
+			      "Binding": {
+			        "ConceptualEntity": "combined_parking_tickets"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "combined_parking_ticket": {
+			          "Target": {
+			            "Entity": "combined_parking_ticket"
+			          }
+			        },
+			        "combined_parking_ticket.weekend_or_weekday": {
+			          "Target": {
+			            "Entity": "combined_parking_ticket.weekend_or_weekday"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "combined_parking_ticket"
+			            },
+			            "Object": {
+			              "Role": "combined_parking_ticket.weekend_or_weekday"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "combined_parking_tickets_have_weekend_or_weekday"
+			        },
+			        {
+			          "Verb": {
+			            "Subject": {
+			              "Role": "combined_parking_ticket"
+			            },
+			            "Verbs": [
+			              {
+			                "weekend": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "PrepositionalPhrases": [
+			              {
+			                "Prepositions": [
+			                  {
+			                    "or": {
+			                      "State": "Generated"
+			                    }
+			                  }
+			                ],
+			                "Object": {
+			                  "Role": "combined_parking_ticket.weekend_or_weekday"
+			                }
+			              }
+			            ]
+			          },
+			          "State": "Generated",
+			          "Weight": 0.95,
+			          "ID": "combined_parking_tickets_weekend_or_weekend_or_weekday"
+			        }
+			      ]
+			    },
+			    "combined_parking_ticket_has_time_category": {
+			      "Binding": {
+			        "ConceptualEntity": "combined_parking_tickets"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "combined_parking_ticket": {
+			          "Target": {
+			            "Entity": "combined_parking_ticket"
+			          }
+			        },
+			        "combined_parking_ticket.time_category": {
+			          "Target": {
+			            "Entity": "combined_parking_ticket.time_category"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "combined_parking_ticket"
+			            },
+			            "Object": {
+			              "Role": "combined_parking_ticket.time_category"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "combined_parking_tickets_have_time_categories"
+			        }
+			      ]
+			    },
+			    "combined_parking_ticket_has_violation_time": {
+			      "Binding": {
+			        "ConceptualEntity": "combined_parking_tickets"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "combined_parking_ticket": {
+			          "Target": {
+			            "Entity": "combined_parking_ticket"
+			          }
+			        },
+			        "combined_parking_ticket.violation_time": {
+			          "Target": {
+			            "Entity": "combined_parking_ticket.violation_time"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "combined_parking_ticket"
+			            },
+			            "Object": {
+			              "Role": "combined_parking_ticket.violation_time"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "combined_parking_tickets_have_violation_times"
+			        }
+			      ]
+			    },
+			    "combined_parking_ticket_has_violation_date": {
+			      "Binding": {
+			        "ConceptualEntity": "combined_parking_tickets"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "combined_parking_ticket": {
+			          "Target": {
+			            "Entity": "combined_parking_ticket"
+			          }
+			        },
+			        "combined_parking_ticket.violation_date": {
+			          "Target": {
+			            "Entity": "combined_parking_ticket.violation_date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "combined_parking_ticket"
+			            },
+			            "Object": {
+			              "Role": "combined_parking_ticket.violation_date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "combined_parking_tickets_have_violation_dates"
+			        }
+			      ]
+			    },
+			    "combined_parking_ticket_has_inf_descr": {
+			      "Binding": {
+			        "ConceptualEntity": "combined_parking_tickets"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "combined_parking_ticket": {
+			          "Target": {
+			            "Entity": "combined_parking_ticket"
+			          }
+			        },
+			        "combined_parking_ticket.inf_descr": {
+			          "Target": {
+			            "Entity": "combined_parking_ticket.inf_descr"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "combined_parking_ticket"
+			            },
+			            "Object": {
+			              "Role": "combined_parking_ticket.inf_descr"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "combined_parking_tickets_have_inf_descrs"
+			        }
+			      ]
+			    },
+			    "combined_parking_ticket_has_inf_cd": {
+			      "Binding": {
+			        "ConceptualEntity": "combined_parking_tickets"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "combined_parking_ticket": {
+			          "Target": {
+			            "Entity": "combined_parking_ticket"
+			          }
+			        },
+			        "combined_parking_ticket.inf_cd": {
+			          "Target": {
+			            "Entity": "combined_parking_ticket.inf_cd"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "combined_parking_ticket"
+			            },
+			            "Object": {
+			              "Role": "combined_parking_ticket.inf_cd"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "combined_parking_tickets_have_inf_cd"
+			        }
+			      ]
+			    },
+			    "combined_parking_ticket_has_viol_loc": {
+			      "Binding": {
+			        "ConceptualEntity": "combined_parking_tickets"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "combined_parking_ticket": {
+			          "Target": {
+			            "Entity": "combined_parking_ticket"
+			          }
+			        },
+			        "combined_parking_ticket.viol_loc": {
+			          "Target": {
+			            "Entity": "combined_parking_ticket.viol_loc"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "combined_parking_ticket"
+			            },
+			            "Object": {
+			              "Role": "combined_parking_ticket.viol_loc"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "combined_parking_tickets_have_viol_locs"
+			        }
+			      ]
+			    },
+			    "combined_parking_ticket_has_violation_datetime": {
+			      "Binding": {
+			        "ConceptualEntity": "combined_parking_tickets"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "combined_parking_ticket": {
+			          "Target": {
+			            "Entity": "combined_parking_ticket"
+			          }
+			        },
+			        "combined_parking_ticket.violation_datetime": {
+			          "Target": {
+			            "Entity": "combined_parking_ticket.violation_datetime"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "combined_parking_ticket"
+			            },
+			            "Object": {
+			              "Role": "combined_parking_ticket.violation_datetime"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "combined_parking_tickets_have_violation_datetimes"
+			        }
+			      ]
+			    },
+			    "combined_parking_ticket_in_address": {
+			      "Binding": {
+			        "ConceptualEntity": "combined_parking_tickets"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "combined_parking_ticket": {
+			          "Target": {
+			            "Entity": "combined_parking_ticket"
+			          }
+			        },
+			        "combined_parking_ticket.address": {
+			          "Target": {
+			            "Entity": "combined_parking_ticket.address"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "combined_parking_ticket.address"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "combined_parking_ticket"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "combined_parking_ticket.address"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "combined_parking_tickets_are_in_addresses"
+			        }
+			      ]
+			    },
+			    "combined_parking_ticket_in_location": {
+			      "Binding": {
+			        "ConceptualEntity": "combined_parking_tickets"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "combined_parking_ticket": {
+			          "Target": {
+			            "Entity": "combined_parking_ticket"
+			          }
+			        },
+			        "combined_parking_ticket.location": {
+			          "Target": {
+			            "Entity": "combined_parking_ticket.location"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "combined_parking_ticket.location"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "combined_parking_ticket"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "combined_parking_ticket.location"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "combined_parking_tickets_are_in_locations"
+			        }
+			      ]
+			    },
+			    "combined_parking_ticket_violation_date_date_hierarchy_has_combined_parking_ticket_violation_date_day": {
+			      "Binding": {
+			        "ConceptualEntity": "combined_parking_tickets"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "combined_parking_ticket.violation_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "combined_parking_ticket.violation_date.date_hierarchy"
+			          }
+			        },
+			        "combined_parking_ticket.violation_date.day": {
+			          "Target": {
+			            "Entity": "combined_parking_ticket.violation_date.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "combined_parking_ticket.violation_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "combined_parking_ticket.violation_date.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "violation_date_hierarchies_have_violation_days"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+

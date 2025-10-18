@@ -1,0 +1,22 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["combined_parking_tickets"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table combined_parking_tickets
+ref table DayOrder
+ref table DateTableTemplate_17c7f618-2822-4fec-be60-9735903cbb5b
+ref table LocalDateTable_0fe756b6-343a-4a58-89e6-244107c16dca
+ref table LocalDateTable_92d6dd8e-7bbb-4db2-916f-3e72a92668fc
+
+ref cultureInfo en-US
+

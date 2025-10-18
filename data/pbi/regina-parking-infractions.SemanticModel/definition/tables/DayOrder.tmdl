@@ -1,0 +1,43 @@
+table DayOrder
+	lineageTag: f3570e63-2d6d-4ce3-8eac-d3f1076ea3e1
+
+	column Day
+		lineageTag: 946d249a-8673-4e7d-aa5a-07187ca22b46
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Day]
+		sortByColumn: Order
+
+		annotation SummarizationSetBy = Automatic
+
+	column Order
+		formatString: 0
+		lineageTag: b2c27af6-233d-4c3d-a12a-022cdcfa1bdd
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Order]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DayOrder = calculated
+		mode: import
+		source = ```
+				
+				DATATABLE(
+				  "Day", STRING,
+				  "Order", INTEGER,
+				  {
+				    {"Monday", 1},
+				    {"Tuesday", 2},
+				    {"Wednesday", 3},
+				    {"Thursday", 4},
+				    {"Friday", 5},
+				    {"Saturday", 6},
+				    {"Sunday", 7}
+				  }
+				)
+				
+				```
+
+	annotation PBI_Id = 0333ebfacae24a559105e651bd3ddcba
+
