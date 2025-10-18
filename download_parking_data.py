@@ -125,6 +125,24 @@ class ReginaParkingDataDownloader:
             df["VIOLATION_DATE"] = df["VIOLATION_DATETIME"].dt.date
             df["VIOLATION_TIME"] = df["VIOLATION_DATETIME"].dt.time
 
+            # Add time category
+            logger.info("Adding TIME_CATEGORY column...")
+            df["TIME_CATEGORY"] = df["VIOLATION_DATETIME"].apply(self.categorize_time)
+
+            # Add day of week
+            logger.info("Adding DAY_OF_WEEK column...")
+            df["DAY_OF_WEEK"] = df["VIOLATION_DATETIME"].dt.day_name()
+
+            # Add weekend/weekday indicator
+            logger.info("Adding WEEKEND_OR_WEEKDAY column...")
+            df["WEEKEND_OR_WEEKDAY"] = df["VIOLATION_DATETIME"].dt.dayofweek.apply(
+                lambda x: "Weekend" if x >= 5 else "Weekday"
+            )
+
+            # Add public holiday indicator
+            logger.info("Adding IS_PUBLIC_HOLIDAY column...")
+            df["IS_PUBLIC_HOLIDAY"] = df["VIOLATION_DATE"].apply(self.is_public_holiday)
+
         # Split VIOL_LOC into LOCATION and ADDRESS
         if "VIOL_LOC" in df.columns:
             logger.info("Splitting VIOL_LOC into LOCATION and ADDRESS...")
@@ -135,6 +153,47 @@ class ReginaParkingDataDownloader:
 
         logger.info("Processing complete")
         return df
+
+    def categorize_time(self, dt):
+        """Categorize time into periods."""
+        if pd.isna(dt):
+            return None
+
+        hour = dt.hour
+
+        if 8 <= hour < 12:
+            return "8am-12pm"
+        elif 12 <= hour < 17:
+            return "12pm-5pm"
+        elif 17 <= hour < 23:
+            return "5pm-11pm"
+        else:  # 23-8 (11pm to 8am)
+            return "11pm-8am"
+
+    def is_public_holiday(self, date_val):
+        """Check if a date is a public holiday in Saskatchewan for 2025."""
+        if pd.isna(date_val):
+            return None
+
+        # Convert to datetime.date if it's not already
+        if hasattr(date_val, "date"):
+            date_val = date_val.date()
+
+        # 2025 Saskatchewan public holidays
+        holidays_2025 = [
+            pd.Timestamp("2025-01-01").date(),  # New Year's Day
+            pd.Timestamp("2025-02-17").date(),  # Family Day
+            pd.Timestamp("2025-04-18").date(),  # Good Friday
+            pd.Timestamp("2025-05-19").date(),  # Victoria Day
+            pd.Timestamp("2025-07-01").date(),  # Canada Day
+            pd.Timestamp("2025-08-04").date(),  # Saskatchewan Day
+            pd.Timestamp("2025-09-01").date(),  # Labour Day
+            pd.Timestamp("2025-10-13").date(),  # Thanksgiving
+            pd.Timestamp("2025-11-11").date(),  # Remembrance Day
+            pd.Timestamp("2025-12-25").date(),  # Christmas Day
+        ]
+
+        return "Yes" if date_val in holidays_2025 else "No"
 
     def clean_data(self, df: pd.DataFrame) -> pd.DataFrame:
         """Clean up known typos and data quality issues."""
@@ -283,21 +342,35 @@ class ReginaParkingDataDownloader:
                 f"Date range: {df['VIOLATION_DATE'].min()} to {df['VIOLATION_DATE'].max()}"
             )
 
-        # Display time statistics
-        if "VIOLATION_TIME" in df.columns:
-            # Create hour column for analysis
-            df_temp = df.copy()
-            df_temp["hour"] = pd.to_datetime(
-                df_temp["VIOLATION_TIME"].astype(str)
-            ).dt.hour
-            top_hours = df_temp["hour"].value_counts().head(3)
-            print(
-                f"Most common violation hours: {dict(zip(top_hours.index, top_hours.values))}"
-            )
+        # Display time category statistics
+        if "TIME_CATEGORY" in df.columns:
+            print(f"\nTime category distribution:")
+            for cat, count in df["TIME_CATEGORY"].value_counts().items():
+                print(f"  {cat}: {count:,}")
+
+        # Display day of week statistics
+        if "DAY_OF_WEEK" in df.columns:
+            print(f"\nTop 3 days for violations:")
+            for day, count in df["DAY_OF_WEEK"].value_counts().head(3).items():
+                print(f"  {day}: {count:,}")
+
+        # Display weekend/weekday statistics
+        if "WEEKEND_OR_WEEKDAY" in df.columns:
+            print(f"\nWeekend vs Weekday:")
+            for status, count in df["WEEKEND_OR_WEEKDAY"].value_counts().items():
+                pct = (count / len(df)) * 100
+                print(f"  {status}: {count:,} ({pct:.1f}%)")
+
+        # Display public holiday statistics
+        if "IS_PUBLIC_HOLIDAY" in df.columns:
+            holiday_counts = df["IS_PUBLIC_HOLIDAY"].value_counts()
+            print(f"\nPublic holiday violations:")
+            for status, count in holiday_counts.items():
+                print(f"  {status}: {count:,}")
 
         # Display location statistics
         if "LOCATION" in df.columns:
-            print(f"Unique location types: {df['LOCATION'].nunique()}")
+            print(f"\nUnique location types: {df['LOCATION'].nunique()}")
             print(f"Top locations: {df['LOCATION'].value_counts().head(3).to_dict()}")
 
         # Display address statistics
