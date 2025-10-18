@@ -134,13 +134,17 @@ class ReginaParkingDataDownloader:
     def clean_data(self, df: pd.DataFrame) -> pd.DataFrame:
         """Clean up known typos and data quality issues."""
         logger.info("Cleaning data...")
-
+        
         if "ADDRESS" in df.columns:
             # Fix typo: "Augus St" should be "Angus St"
             df["ADDRESS"] = df["ADDRESS"].str.replace(
                 "Augus St,", "Angus St,", regex=False
             )
-
+            # Fix typo: "August St" should be "Angus St"
+            df["ADDRESS"] = df["ADDRESS"].str.replace(
+                "August St,", "Angus St,", regex=False
+            )
+        
         return df
 
     def split_location(self, df: pd.DataFrame) -> pd.DataFrame:
