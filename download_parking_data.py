@@ -163,25 +163,35 @@ class ReginaParkingDataDownloader:
 
             viol_loc_str = str(viol_loc).strip()
 
-            # Pattern to match location prefixes like "WEST SIDE", "IN FRONT OF", "OPPOSITE", etc.
-            location_patterns = [
-                r"^(WEST SIDE|EAST SIDE|NORTH SIDE|SOUTH SIDE)\s+(.+)$",
-                r"^(IN FRONT OF|OPPOSITE)\s+(.+)$",
-            ]
-
             location = None
             address = None
 
-            for pattern in location_patterns:
-                match = re.match(pattern, viol_loc_str, re.IGNORECASE)
-                if match:
-                    location = match.group(1)
-                    address = match.group(2)
-                    break
+            # First try: Match pattern with street number (e.g., "WEST SIDE 1800 ANGUS ST")
+            match = re.match(r"^(.+?)\s+(\d+\s+.+)$", viol_loc_str, re.IGNORECASE)
 
-            # If no pattern matched, treat entire string as address
-            if location is None:
-                address = viol_loc_str
+            if match:
+                potential_location = match.group(1).strip()
+                potential_address = match.group(2).strip()
+
+                # Check if the potential location is NOT starting with a number
+                if not re.match(r"^\d", potential_location):
+                    location = potential_location
+                    address = potential_address
+                else:
+                    # If starts with number, it's the full address
+                    address = viol_loc_str
+            else:
+                # Second try: Check for common location prefixes without street numbers
+                # (e.g., "IN FRONT OF DARKE CRES" or "NORTH SIDE 11TH AVE")
+                prefix_pattern = r"^(WEST SIDE|EAST SIDE|NORTH SIDE|SOUTH SIDE|IN FRONT OF|OPPOSITE|BESIDE|BEHIND|NEAR|ADJACENT TO)\s+(.+)$"
+                prefix_match = re.match(prefix_pattern, viol_loc_str, re.IGNORECASE)
+
+                if prefix_match:
+                    location = prefix_match.group(1).strip()
+                    address = prefix_match.group(2).strip()
+                else:
+                    # No pattern matched, treat entire string as address
+                    address = viol_loc_str
 
             # Format location with proper capitalization
             if location:
