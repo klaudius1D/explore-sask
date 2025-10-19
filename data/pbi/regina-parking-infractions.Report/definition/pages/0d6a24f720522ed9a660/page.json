@@ -1,0 +1,42 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
+  "name": "0d6a24f720522ed9a660",
+  "displayName": "Page 1",
+  "displayOption": "FitToPage",
+  "height": 1000,
+  "width": 1280,
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "8290b910e6464036a17c",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "combined_parking_tickets"
+              }
+            },
+            "Property": "ADDRESS"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "7959c7f275c81ee2e6a2",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "combined_parking_tickets"
+              }
+            },
+            "Property": "DAY_OF_WEEK"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      }
+    ]
+  }
+}

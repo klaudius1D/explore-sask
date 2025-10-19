@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "regina-parking-infractions"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "21361752-f27e-49e1-a95a-9fe90abfeeaf"
+  }
+}
